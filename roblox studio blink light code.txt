@@ -1,0 +1,17 @@
+local neonMaterial = "Neon"
+local concreteMaterial = "Concrete"
+local isOn = false
+
+while true do
+	isOn = not isOn
+
+	if isOn then
+		script.Parent.BrickColor = BrickColor.new("Persimmon")
+		script.Parent.Material = neonMaterial
+	else
+		script.Parent.BrickColor = BrickColor.new("Really black")
+		script.Parent.Material = concreteMaterial
+	end
+
+	wait(2)
+end
